@@ -1,1 +1,0 @@
-# checkpoint2-Rosa-Carvajal
