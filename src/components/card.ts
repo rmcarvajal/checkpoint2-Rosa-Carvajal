@@ -2,7 +2,7 @@ class card extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({ mode: 'open' });
-        this.shadowRoot.innerHTML = `
+        this.shadowRoot!.innerHTML = `
             <div class="card">
         <div class="card-img"></div>
         <h1>NAME</h1>
@@ -32,6 +32,8 @@ class card extends HTMLElement{
 }
     </style>
         `;
+        
+        const img = document.querySelector(this.img)
     }
 }
 
