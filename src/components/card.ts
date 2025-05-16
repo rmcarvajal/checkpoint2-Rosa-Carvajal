@@ -32,8 +32,13 @@ class card extends HTMLElement{
 }
     </style>
         `;
-        
-        const img = document.querySelector(this.img)
+    }
+    set data!(card) {
+        this.shadowRoot.querySelector(".card-img").style.backgroundImage = `url(${card.img})`
+        this.shadowRoot.querySelector("h1").textContent = card.common_name
+        this.shadowRoot.querySelector("h2").textContent = card.scientific_name
+        this.shadowRoot.querySelector("h3").textContent = card.type
+
     }
 }
 
